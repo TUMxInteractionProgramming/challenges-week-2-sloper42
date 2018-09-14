@@ -10,85 +10,10 @@
     <meta charset="UTF-8">
 
     <!-- #2 #css #elements -->
-    <style>
 
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
-        /*styles for channel area*/
-        #channels {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-            list-style-type: none;
-        }
-
-        #divchannelbuttons {
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
- 
-        .chatmessage {
-            width: 80%;
-        }
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        a {
-            color: black;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-
-    </style>
 
 </head>
 
@@ -103,14 +28,14 @@
 <!-- #1 #channels #topics -->
 <ul id="channels">
 <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="staro"></li>
-<li>#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
+<li class="selected">#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
 <li>#KillerApp<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="staro"></li>
 <li>#FirstPersonOnMars<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
 <li>#Octoberfest<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="staro"></li>
 </ul>
 <!-- #1 #channels #buttons -->
 <div id="divchannelbuttons">
-<button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb">new</button>
+<button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb">new</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire">trending</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star">favorites</button>
 </div>
@@ -126,6 +51,7 @@
 </h1>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message own">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank">cheeses.yard.applies</a></strong>
@@ -134,12 +60,13 @@
     <em>15 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<div class="chatmessage">
+
 <p>What's the place you folks call home?</p>
-</div>
+
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
+<div class="message">
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -149,9 +76,9 @@
     <em>4 min. left</em>
 </h3>
 <!-- #1 #chat #messages depict a short fictional chat-->
-<div class="chatmessage">
+
 <p>BRISBANE! Hang loose!</p>
-</div>
+
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 
@@ -163,10 +90,11 @@
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>12 min. left</em>
 </h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<div class="chatmessage">
-<p>The big apple.</p>
 </div>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<div class="message">
+<p>The big apple.</p>
+
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 
@@ -178,10 +106,11 @@
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>7 min. left</em>
 </h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<div class="chatmessage">
-<p>Eu sou um Carocas.</p>
 </div>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<div class="message">
+<p>Eu sou um Carocas.</p>
+
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 
@@ -193,10 +122,11 @@
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>14 min. left</em>
 </h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<div class="chatmessage">
-<p>Greetings from the western cape!</p>
 </div>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<div class="message">
+<p>Greetings from the western cape!</p>
+
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
 
@@ -208,12 +138,13 @@
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>15 min. left</em>
 </h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<div class="chatmessage">
-<p>北京</p>
 </div>
+<!-- #1 #chat #messages depict a short fictional chat-->
+<div class="message">
+<p>北京</p>
+
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
 </body>
 </html>

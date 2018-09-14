@@ -1,0 +1,128 @@
+/* Global */
+
+/* #2 #colorful #palette is:
+  * Background: #F5F5F5 (GREY 100)
+  * Primary Text: black
+
+  * Primary color: #3F51B5 (INDIGO)
+  * Primary color_text : white
+  * Accent color: #CDDC39 (LIME)
+  * Accent color_text: black
+  */
+
+* {
+    /* #2 #font #faces */
+    font-family: 'Arial', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body {
+    /* #2 #colorful #background */
+    background-color: #F5F5F5;
+}
+
+h1 {
+    /* #2 #colourful #app-bar */
+    background-color: #3F51B5;
+    color: white;
+}
+
+button {
+    /* #2 #colourful #plusfive */
+    background-color: #CDDC39;
+    color: black;
+    /* #2 #font capital #letters */
+    text-transform: uppercase;
+}
+
+/* App bar */
+
+/*Channels list */
+
+#channels {
+    /* #2 #colorful #channelandchat */
+    background-color: white;
+    list-style-type: none;
+}
+
+#channels li {
+    padding: 16px;
+    font-size: 16px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-width: 1px;
+}
+
+#channels .selected {
+
+     color: #3F51B5;
+     border-left-style: solid;
+     border-left-width: 4px;
+     -moz-border-left-colors: #3F51B5;    
+}
+
+/*Tab bar */
+
+#divchannelbuttons {
+    background-color: white;
+    text-align: center;
+}
+
+#divchannelbuttons button {
+
+    background-color: white;
+    border-style: none;
+    font-size-adjust: 13px;
+    width: 25%;
+    margin: 16px;
+    height: 72px;
+}
+
+#divchannelbuttons  .selected {
+
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color:#3F51B5; 
+}
+/*Messages*/
+
+
+        .message p {
+            /* #2 #colorful #channelandchat */
+            background-color: white;
+            padding: 16px;
+        }
+ 
+        .message {
+            width: 80%;
+            margin-bottom: 8px;
+            font-size: medium;
+            margin-left: 2.5%;
+        }
+
+        .own {
+            margin-left: 17.5%;
+        }
+        
+        .message strong {
+            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
+            text-transform: uppercase;
+            background-color: white;
+            
+        }
+
+        .message a {
+            color: black;
+        }
+
+        h3 {
+            /* #2 #font #metadata is now medium */
+            font-size: medium;
+        }
+
+        em {
+            /* #2 #font #remaining overrides the default italic appearance of em elements*/
+            font-size: larger;
+            font-style: normal;
+        }
