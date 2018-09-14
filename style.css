@@ -52,6 +52,7 @@ button {
     border-bottom-style: solid;
     border-bottom-color: gray;
     border-width: 1px;
+    margin: 16px;
 }
 
 #channels .selected {
@@ -66,7 +67,7 @@ button {
 
 #divchannelbuttons {
     background-color: white;
-    text-align: center;
+    margin: 0;
 }
 
 #divchannelbuttons button {
@@ -74,8 +75,8 @@ button {
     background-color: white;
     border-style: none;
     font-size-adjust: 13px;
-    width: 25%;
-    margin: 16px;
+    width: 33%;
+  /*  margin: 16px;*/
     height: 72px;
 }
 
